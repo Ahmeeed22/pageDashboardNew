@@ -1,0 +1,9 @@
+<div class="chart-container piChart shadow position-relative p-2" *ngIf="data">
+    <div class="label position-absolute" style="top: 5%; left: 5%; "[style.color]="data[0].color"  >
+        <i class="fas fa-chart-pie"></i> 
+        <span>Hight</span> 
+    </div>
+    
+    <p class="text-center  w-100 position-absolute" style="top: 45%;"><span [style.color]="data[0].color" style=" font-size: 20px;">{{data[0].value}}% </span><br>  Pi Chart </p>
+    <canvas  [id]="'MyChart'+data[0].id" class="chart-canvas">{{ chart }}  </canvas>
+</div>

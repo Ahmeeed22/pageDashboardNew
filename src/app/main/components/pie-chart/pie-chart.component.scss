@@ -1,0 +1,15 @@
+.chart-container {
+    display: flex;
+    justify-content: center; /* Center the chart horizontally */
+    align-items: center; /* Center the chart vertically */
+    width: 100%; /* Take full width of the parent container */
+    height: 100%; /* Take full height of the parent container */
+  }
+  
+  .chart-canvas {
+    max-width: 100%; /* Ensure the canvas doesn't exceed its container */
+    max-height: 100%; /* Ensure the canvas doesn't exceed its container */
+    width: auto !important; /* Make canvas width responsive */
+    height: auto !important; /* Make canvas height responsive */
+  }
+  
